@@ -3,6 +3,48 @@
 
 
 
+## Model Analysis and Comparison
+
+In this project, we evaluated four different autoencoder models on the EMNIST dataset, focusing on their performance in terms of training and validation loss, Mean Squared Error (MSE), Structural Similarity Index (SSIM), and Peak Signal-to-Noise Ratio (PSNR). The following is a detailed analysis of each model's performance:
+
+### Model 01:
+- **Training Loss:** 0.00379
+- **Validation Loss:** 0.00401
+- **MSE:** 0.00317 (both Autoencoder and Decoder)
+- **SSIM:** 0.98057 (both Autoencoder and Decoder)
+- **PSNR:** 26.02 dB (both Autoencoder and Decoder)
+
+Model 01 demonstrates the best overall performance with the lowest training and validation loss, indicating excellent generalization. It also achieved the highest SSIM, reflecting superior image reconstruction quality.
+
+### Model 02:
+- **Training Loss:** 0.01034
+- **Validation Loss:** 0.01121
+- **MSE:** 0.01106 (both Autoencoder and Decoder)
+- **SSIM:** 0.92342 (both Autoencoder and Decoder)
+- **PSNR:** 20.26 dB (both Autoencoder and Decoder)
+
+Model 02 shows a higher training and validation loss, suggesting potential overfitting. The lower SSIM and PSNR indicate a comparatively reduced ability in preserving image details during reconstruction.
+
+### Model 03:
+- **Training Loss:** 0.00390
+- **Validation Loss:** 0.00421
+- **MSE:** 0.00371 (both Autoencoder and Decoder)
+- **SSIM:** 0.97389 (both Autoencoder and Decoder)
+- **PSNR:** 24.85 dB (both Autoencoder and Decoder)
+
+Model 03 offers a good balance between training and validation performance. It shows a high degree of image reconstruction accuracy, as evident from its SSIM and PSNR values.
+
+### Model 04:
+- **Training Loss:** 0.00506
+- **Validation Loss:** 0.00533
+- **MSE:** 0.00468 (both Autoencoder and Decoder)
+- **SSIM:** 0.96943 (both Autoencoder and Decoder)
+- **PSNR:** 23.90 dB (both Autoencoder and Decoder)
+
+Model 04 falls between Models 01 and 02 in terms of performance metrics. It displays a moderate level of image reconstruction capability, reflected in its SSIM and PSNR scores.
+
+### Summary
+The evaluation metrics indicate that **Model 01** stands out as the most effective in reconstructing images from the EMNIST dataset, with the highest SSIM and PSNR scores and the lowest loss values. Models 03 and 04 offer competitive performance, with Model 02 lagging slightly behind in terms of image quality preservation. These insights are crucial for further refinement of autoencoder models for image reconstruction tasks.
 
 
 The results show that the **Mean Squared Error (MSE)** is identical for both the full autoencoder
