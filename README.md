@@ -34,7 +34,12 @@ For high-quality image reconstruction, I made specific design choices in the enc
 
 ### Experimental Approach:
 To determine the optimal layer configuration for the decoder, I tested four different models, each with a unique decoder structure. The performance of each model was assessed based on several key metrics. This evaluation was conducted for both the full autoencoder models and only their decoder parts, to gauge their respective abilities in reconstructing images accurately.
-This systematic exploration helps us understand the impact of decoder configurations on image reconstruction quality, providing insights for enhancing autoencoder performance in data compression tasks. Below is a detailed analysis including explanations of each metric:
+This systematic exploration helps us understand the impact of decoder configurations on image reconstruction quality, providing insights for enhancing autoencoder performance in data compression tasks. 
+
+### Dataset Used:
+For this analysis, the EMNIST-Balanced dataset was chosen. It is a comprehensive dataset that includes a mix of digits, uppercase, and lowercase letters, offering a diverse range of characters for my models to learn and reconstruct.
+
+- Below is a detailed analysis including explanations of each metric:
 
 ### Metrics Explained:
 - **Training Loss:** Measures how well the model is performing during the training phase. Lower values indicate better performance.
