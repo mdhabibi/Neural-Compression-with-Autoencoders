@@ -44,7 +44,7 @@ This systematic exploration helps us understand the impact of decoder configurat
 - **Peak Signal-to-Noise Ratio (PSNR):** Measures the ratio between the maximum possible power of a signal and the power of corrupting noise. Expressed in decibels (dB), higher values represent better reconstruction quality.
 
 <div align="center">
-  <img src="images/autoencoder_model_comparisons.png" width="500">
+  <img src="images/autoencoder_model_comparisons.png" width="800">
 </div>
 
 ### Model 01:
