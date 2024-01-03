@@ -89,7 +89,7 @@ The ability of these models to reconstruct images serves as a testament to their
 
 ## Acknowledgments
 
-- - A special thank you to **Dr. Peter Steinbach**, Team Lead for Matter Research at Helmholtz AI Consultants, for his smart proposal regarding the topic of data compression using encoders. You can find more about his works on [Peter Steinbach](https://github.com/psteinb).
+- A special thank you to **Dr. Peter Steinbach**, Team Lead for Matter Research at Helmholtz AI Consultants, for his smart proposal regarding the topic of data compression using encoders. You can find more about his works on [Peter Steinbach](https://github.com/psteinb).
 - Data provided by [MachineCurve](https://github.com/machinecurve/extra_keras_datasets).
 
 - **Contact for Collaboration:** If you are interested in collaborating or have ideas to share, please feel free to reach out to me at [habibi.physics@gmail.com](mailto:habibi.physics@gmail.com). 
