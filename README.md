@@ -1,4 +1,5 @@
-# CompressNetMNIST
+# EMNIST-DataCompressNet
+
 ## Project Overview: Data Compression with Complex Autoencoder Architectures
 
 The primary objective of this project is to develop an efficient model for data compression. The focus is on leveraging complex autoencoder architectures to achieve significant dimensionality reduction while minimizing information loss. These models are adept at encoding high-dimensional data into a lower-dimensional space, effectively compressing the data while preserving its essential characteristics. 
