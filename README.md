@@ -1,6 +1,33 @@
 # CompressNetMNIST
 
 
+## Introduction to Autoencoder Architecture and Applications
+
+Autoencoders are a type of neural network architecture used for unsupervised learning. They are designed to encode input data into a lower-dimensional representation and then reconstruct the original data from this representation. This process allows for learning efficient data codings in an automated fashion.
+
+### Applications of Autoencoders:
+- **Dimensionality Reduction:** Similar to PCA, autoencoders can reduce the dimensionality of data, which is useful for tasks like data visualization and noise reduction.
+- **Feature Learning:** Autoencoders can learn useful features automatically, which can be beneficial for tasks such as anomaly detection or pretraining for other neural networks.
+- **Image Reconstruction:** They are widely used for tasks that involve reconstructing images, including denoising and inpainting.
+- **Generative Models:** Autoencoders can serve as generative models to create new data instances that resemble the training data.
+
+### Design Choices for Encoder and Decoder:
+In this project, we focused on optimizing the autoencoder architecture for high-quality image reconstruction. The following explains the rationale behind our design choices:
+
+#### Encoder Part - Why Only Conv2D with Strides:
+- **Preservation of Spatial Information:** By using only `Conv2D` layers with strides for downsampling, we aimed to preserve more spatial information compared to max pooling. Strided convolutions reduce dimensions while learning how to downsample, retaining more details that are crucial for accurate reconstruction.
+- **Balancing Efficiency and Detail:** We avoided `MaxPooling2D` to minimize information loss and ensure that the encoded representation retains sufficient detail for high-quality reconstruction.
+
+#### Decoder Part - Why Conv2DTranspose Instead of UpSampling:
+- **Quality of Reconstruction:** To reconstruct the images from the latent representation, we chose `Conv2DTranspose` layers over `UpSampling2D`. This decision was driven by the need for higher-quality image reconstruction.
+- **Learnable Upsampling:** `Conv2DTranspose` layers offer learnable parameters for upsampling, allowing the network to effectively learn how to expand the encoded representation back to the original image size.
+- **Avoiding Artifacts:** The use of `Conv2DTranspose` also helps in reducing artifacts that might occur with simpler upsampling methods.
+
+### Experimental Approach:
+To determine the optimal layer configuration for the decoder, we tested four different models, each with a unique decoder structure. We employed metrics such as MSE, SSIM, and PSNR to evaluate which model could most effectively reconstruct the original images.
+
+### Conclusion:
+This approach allowed us to systematically explore the impact of different decoder configurations on the quality of image reconstruction, leading to valuable insights for enhancing autoencoder performance in image-based tasks.
 
 
 ## Model Analysis and Comparison
