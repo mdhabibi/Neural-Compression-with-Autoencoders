@@ -53,9 +53,24 @@ For this analysis, the **EMNIST-Balanced** dataset was chosen. It is a comprehen
 </div>
 
 - **Model01** demonstrates the best overall performance with the lowest training and validation loss, indicating excellent generalization. It also achieved the highest SSIM, reflecting superior image reconstruction quality.
+<div align="center">
+  <img src="images/origin_recon_model01.png" width="800">
+</div>
+
 - **Model02** shows a higher training and validation loss, suggesting potential overfitting. The lower SSIM and PSNR indicate a comparatively reduced ability in preserving image details during reconstruction.
+<div align="center">
+  <img src="images/origin_recon_model02.png" width="800">
+</div>
+
 - **Model03** offers a good balance between training and validation performance. It shows a high degree of image reconstruction accuracy, as evident from its SSIM and PSNR values.
+<div align="center">
+  <img src="images/origin_recon_model03.png" width="800">
+</div>
+
 - **Model04** falls between Models01 and 02 in terms of performance metrics. It displays a moderate level of image reconstruction capability, reflected in its SSIM and PSNR scores.
+<div align="center">
+  <img src="images/origin_recon_model04.png" width="800">
+</div>
 
 ### Summary
 The evaluation metrics indicate that **Model 01** stands out as the most effective in reconstructing images from the EMNIST dataset, with the highest SSIM and PSNR scores and the lowest loss values. Models 03 and 04 offer competitive performance, with Model 02 lagging slightly behind in terms of image quality preservation. These insights are crucial for further refinement of autoencoder models for image reconstruction tasks.
