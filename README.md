@@ -5,7 +5,14 @@
 
 ## Model Analysis and Comparison
 
-In this project, we evaluated four different autoencoder models on the EMNIST dataset, focusing on their performance in terms of training and validation loss, Mean Squared Error (MSE), Structural Similarity Index (SSIM), and Peak Signal-to-Noise Ratio (PSNR). The following is a detailed analysis of each model's performance:
+In this project, we evaluated four different autoencoder models on the EMNIST dataset. The performance of each model was assessed based on several key metrics: training and validation loss, Mean Squared Error (MSE), Structural Similarity Index (SSIM), and Peak Signal-to-Noise Ratio (PSNR). Below is a detailed analysis including explanations of each metric:
+
+### Metrics Explained:
+- **Training Loss:** Measures how well the model is performing during the training phase. Lower values indicate better performance.
+- **Validation Loss:** Indicates the model's performance on unseen data. It helps to identify overfitting.
+- **Mean Squared Error (MSE):** Quantifies the average squared difference between the reconstructed and original images. Lower MSE values signify more accurate reconstructions.
+- **Structural Similarity Index (SSIM):** Assesses the perceived quality of the reconstructed image compared to the original. Ranges from -1 to 1, with higher values indicating better image quality.
+- **Peak Signal-to-Noise Ratio (PSNR):** Measures the ratio between the maximum possible power of a signal and the power of corrupting noise. Expressed in decibels (dB), higher values represent better reconstruction quality.
 
 ### Model 01:
 - **Training Loss:** 0.00379
