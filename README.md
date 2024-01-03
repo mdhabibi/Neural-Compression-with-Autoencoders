@@ -87,6 +87,10 @@ The evaluation metrics indicate that **Model01** stands out as the most effectiv
 This investigation, forming a part of a broader exploration into data compression using various architectures, focuses specifically on the use of complex autoencoder structures. While simpler architectures could be employed, they typically result in greater information loss. My goal is to discover an architecture that not only compresses data but also does so in a near-lossless manner. The complex architecture of the autoencoders in this study was chosen to minimize information loss while achieving data compression.
 The ability of these models to reconstruct images serves as a testament to their potential for lossless data reuse. Moreover, the trained models have been saved and can be reused or fine-tuned for datasets with similar distributions, further enhancing their utility.
 
+## Acknowledgments
+
+- - A special thank you to **Dr. Peter Steinbach**, Team Lead for Matter Research at Helmholtz AI Consultants, for his smart proposal regarding the topic of data compression using encoders. You can find more about his works on [Peter Steinbach](https://github.com/psteinb).
+- Data provided by [MachineCurve](https://github.com/machinecurve/extra_keras_datasets).
 
 - **Contact for Collaboration:** If you are interested in collaborating or have ideas to share, please feel free to reach out to me at [habibi.physics@gmail.com](mailto:habibi.physics@gmail.com). 
 
