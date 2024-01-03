@@ -43,6 +43,9 @@ This systematic exploration helps us understand the impact of decoder configurat
 - **Structural Similarity Index (SSIM):** Assesses the perceived quality of the reconstructed image compared to the original. Ranges from -1 to 1, with higher values indicating better image quality.
 - **Peak Signal-to-Noise Ratio (PSNR):** Measures the ratio between the maximum possible power of a signal and the power of corrupting noise. Expressed in decibels (dB), higher values represent better reconstruction quality.
 
+<div align="center">
+  <img src="images/autoencoder_model_comparisons.png" width="500">
+</div>
 
 ### Model 01:
 - **Training Loss:** 0.00379
