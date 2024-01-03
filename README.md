@@ -44,6 +44,7 @@ This systematic exploration helps us understand the impact of decoder configurat
 
 ### Dataset Used:
 For this analysis, the **EMNIST-Balanced** dataset was chosen. It is a comprehensive dataset that includes a mix of digits, uppercase, and lowercase letters, offering a diverse range of characters for my models to learn and reconstruct.
+*https://github.com/machinecurve/extra_keras_datasets*
 
 - Below is a detailed analysis including explanations of each metric:
 
