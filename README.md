@@ -10,8 +10,8 @@ This approach aims to reduce the memory footprint of data, which is crucial in v
 </div>
 *By Michela Massi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=80177333*
 
+
 Autoencoders are a type of neural network architecture used for unsupervised learning. They are designed to encode input data into a lower-dimensional representation and then reconstruct the original data from this representation. This process allows for learning efficient data codings in an automated fashion.
-Autoencoders, particularly complex architectures, are central to this project's strategy for data compression. These models are adept at encoding high-dimensional data into a lower-dimensional space, effectively compressing the data while preserving its essential characteristics. It's important to note that this form of compression primarily pertains to reducing dimensionality and memory usage, rather than decreasing storage size.
 
 ### Applications of Autoencoders:
 - **Data Compression:** In the context of data compression, autoencoders excel at representing data in a more compact form, which helps in reducing memory usage without significantly compromising the data's integrity.
