@@ -8,7 +8,7 @@ This approach aims to reduce the memory footprint of data, which is crucial in v
 <div align="center">
   <img src="images/Autoencoder_schema.png" width="400">
 </div>
-By &lt;a href=&quot;//commons.wikimedia.org/w/index.php?title=User:Michela_Massi&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new&quot; title=&quot;User:Michela Massi (page does not exist)&quot;&gt;Michela Massi&lt;/a&gt; - &lt;span class=&quot;int-own-work&quot; lang=&quot;en&quot;&gt;Own work&lt;/span&gt;, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80177333">Link</a>
+*By Michela Massi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=80177333*
 
 Autoencoders are a type of neural network architecture used for unsupervised learning. They are designed to encode input data into a lower-dimensional representation and then reconstruct the original data from this representation. This process allows for learning efficient data codings in an automated fashion.
 Autoencoders, particularly complex architectures, are central to this project's strategy for data compression. These models are adept at encoding high-dimensional data into a lower-dimensional space, effectively compressing the data while preserving its essential characteristics. It's important to note that this form of compression primarily pertains to reducing dimensionality and memory usage, rather than decreasing storage size.
