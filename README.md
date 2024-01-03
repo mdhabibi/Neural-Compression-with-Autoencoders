@@ -1,13 +1,14 @@
 # CompressNetMNIST
 ## Project Overview: Data Compression with Complex Autoencoder Architectures
 
-The primary objective of this project is to develop an efficient model for data compression. The focus is on leveraging complex autoencoder architectures to achieve significant dimensionality reduction while minimizing information loss. This approach aims to reduce the memory footprint of data, which is crucial in various applications, including storage optimization and efficient data transmission.
-
-### Using Autoencoders for Efficient Data Compression
-Autoencoders, particularly complex architectures, are central to this project's strategy for data compression. These models are adept at encoding high-dimensional data into a lower-dimensional space, effectively compressing the data while preserving its essential characteristics. It's important to note that this form of compression primarily pertains to reducing dimensionality and memory usage, rather than decreasing storage size.
-
+The primary objective of this project is to develop an efficient model for data compression. The focus is on leveraging complex autoencoder architectures to achieve significant dimensionality reduction while minimizing information loss. These models are adept at encoding high-dimensional data into a lower-dimensional space, effectively compressing the data while preserving its essential characteristics. 
+This approach aims to reduce the memory footprint of data, which is crucial in various applications, including storage optimization and efficient data transmission. It's important to note that this form of compression primarily pertains to reducing dimensionality and memory usage, rather than decreasing storage size.
 
 ## Autoencoder Architecture and Applications
+<div align="center">
+  <img src="images/Autoencoder_schema.png" width="400">
+</div>
+By &lt;a href=&quot;//commons.wikimedia.org/w/index.php?title=User:Michela_Massi&amp;amp;action=edit&amp;amp;redlink=1&quot; class=&quot;new&quot; title=&quot;User:Michela Massi (page does not exist)&quot;&gt;Michela Massi&lt;/a&gt; - &lt;span class=&quot;int-own-work&quot; lang=&quot;en&quot;&gt;Own work&lt;/span&gt;, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=80177333">Link</a>
 
 Autoencoders are a type of neural network architecture used for unsupervised learning. They are designed to encode input data into a lower-dimensional representation and then reconstruct the original data from this representation. This process allows for learning efficient data codings in an automated fashion.
 Autoencoders, particularly complex architectures, are central to this project's strategy for data compression. These models are adept at encoding high-dimensional data into a lower-dimensional space, effectively compressing the data while preserving its essential characteristics. It's important to note that this form of compression primarily pertains to reducing dimensionality and memory usage, rather than decreasing storage size.
