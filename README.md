@@ -82,10 +82,18 @@ For this analysis, the **EMNIST-Balanced** dataset was chosen. It is a comprehen
 ### Summary
 The evaluation metrics indicate that **Model01** stands out as the most effective in reconstructing images from the EMNIST-Balanced dataset, with the highest SSIM and PSNR scores and the lowest loss values. **Models03** and **04** offer competitive performance, with **Model02** lagging slightly behind in terms of image quality preservation. These insights are crucial for further refinement of autoencoder models for image reconstruction tasks.
 
+### Data Compression Analysis
+The original dataset, composed of **uint8** grayscale images **(28x28 pixels)**, occupied approximately **84.34 MB** of memory. To prepare the data for the autoencoder, I converted it to **float32** format, which increased the size to around **337.35 MB** due to the higher precision and range of **float32**.
+The autoencoder model's encoder part successfully compressed this dataset, significantly reducing its size. The encoder output, a lower-dimensional representation of the data in **float32** format, resulted in a compressed dataset of only **13.77 MB**. This demonstrates the model's effectiveness in data compression, achieving a substantial reduction in size while potentially maintaining the integrity of the data for further processing or analysis.
+- Original Dataset Size (`uint8`): ~84.34 MB
+- Dataset Size after Conversion to `float32`: ~337.35 MB
+- Compressed Dataset Size: ~13.77 MB
+
+
 
 ### Concluding Remarks
 This investigation, forming a part of a broader exploration into data compression using various architectures, focuses specifically on the use of complex autoencoder structures. While simpler architectures could be employed, they typically result in greater information loss. My goal is to discover an architecture that not only compresses data but also does so in a near-lossless manner. The complex architecture of the autoencoders in this study was chosen to minimize information loss while achieving data compression.
-The ability of these models to reconstruct images serves as a testament to their potential for lossless data reuse. Moreover, the trained models have been saved and can be reused or fine-tuned for datasets with similar distributions, further enhancing their utility.
+Moreover, the data compression analysis results highlight the efficiency of my autoencoder in terms of memory usage, making it suitable for applications requiring reduced data storage or bandwidth for data transmission. The ability of these models to reconstruct images serves as a testament to their potential for lossless data reuse. Moreover, the trained models have been saved and can be reused or fine-tuned for datasets with similar distributions, further enhancing their utility.
 
 ## Acknowledgments
 
