@@ -42,6 +42,15 @@ For high-quality image reconstruction, I made specific design choices in the enc
 To determine the optimal layer configuration for the decoder, I tested four different models, each with a unique decoder structure. The performance of each model was assessed based on several key metrics. This evaluation was conducted for both the full autoencoder models and only their decoder parts, to gauge their respective abilities in reconstructing images accurately.
 This systematic exploration helps us understand the impact of decoder configurations on image reconstruction quality, providing insights for enhancing autoencoder performance in data compression tasks. 
 
+### Clarification on Reconstruction Methods
+Note that I employed two methods to reconstruct images from the EMNIST dataset as mentioned above: directly using the full autoencoder model and separately using the encoder and decoder models. While theoretically, these two approaches should yield identical results (as the encoder and decoder parts used separately are the same as those combined in the full autoencoder model), I included both methods in my experimentation for the following reasons:
+- **Verification of Model Consistency:** By reconstructing images using both methods, I could verify the consistency and correctness of my autoencoder architecture. This served as a practical check to ensure that the encoder and decoder parts function as intended when used both jointly (in the full autoencoder) and separately.
+- **Illustrative Purposes:** Demonstrating both methods provides a clearer understanding of the autoencoder's functionality, especially for those new to the concept. It illustrates the roles of the encoder and decoder, showing how data is first compressed and then reconstructed.
+- **Foundation for Advanced Analysis:** Separating the encoding and decoding processes lays the groundwork for more complex analyses, such as manipulating or analyzing the encoded representations (latent space) before decoding, which could be a subject for future work.
+- **Educational Value:** Including both methods adds educational value to the project, making it a more comprehensive resource for learners exploring different aspects of autoencoders.
+
+Although including both methods might seem redundant, it was a deliberate choice to enhance the comprehensiveness of my analysis and to provide a robust demonstration of the autoencoder's capabilities in data compression and image reconstruction.
+
 ### Dataset Used:
 For this analysis, the **EMNIST-Balanced** dataset was chosen. It is a comprehensive dataset that includes a mix of digits, uppercase, and lowercase letters, offering a diverse range of characters for my models to learn and reconstruct.
 *https://github.com/machinecurve/extra_keras_datasets*
