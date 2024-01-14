@@ -22,7 +22,7 @@ Autoencoders are a type of neural network architecture used for unsupervised lea
 ### Applications of Autoencoders:
 - **Data Compression:** In the context of data compression, autoencoders excel at representing data in a more compact form, which helps in reducing memory usage without significantly compromising the data's integrity.
 - **Dimensionality Reduction:** Autoencoders can reduce the dimensionality of data, similar to Principal Component Analysis (PCA), making them useful for data visualization and noise reduction.
-- **Feature Learning, Image Reconstruction, and Generative Models:** They are also used for automated feature learning, image reconstruction tasks like denoising and inpainting, and as generative models for creating new data instances.
+- **Feature Learning and Image Reconstruction Models:** They are also used for automated feature learning, image reconstruction tasks like denoising and inpainting.
 
 
 ### Design Choices for Encoder and Decoder:
