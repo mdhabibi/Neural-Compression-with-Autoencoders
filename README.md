@@ -1,4 +1,4 @@
-# EMNIST-DataCompressNet
+# DataCompressNet
 
 <div align="center">
   <img src="images/poster.png" width="400">
